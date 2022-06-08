@@ -117,4 +117,8 @@ cd ..
 cd Tests
 rm -rf libft.a libft.h
 cd ..
-open output
+
+rm -rf output_diff
+touch output_diff
+diff expected_output output >> output_diff
+open output_diff
