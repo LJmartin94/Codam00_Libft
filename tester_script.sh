@@ -63,6 +63,14 @@ make >> ../../compilation_info
 cat -e result.log >> ../../output
 cd ../..
 
+echo "Running happytramp"
+cd Tests
+cd happytramp
+echo "\nhappytramp: " >> ../../output
+make >> ../../compilation_info
+./test >> ../../output
+cd ../..
+
 echo "Running Warmachine"
 echo "\nWarmachine: " >> output
 cd Tests
@@ -91,6 +99,12 @@ gcc -o Boris libft.a lib_bonustest.c
 # gcc -o Boris libft.a lib_deltest.c
 # ./Boris
 rm -rf libft.a libft.h Boris
+cd ../..
+
+echo "\nRunning Destructor (just FYI)"
+cd Tests
+cd destructor2
+./run.sh ../../Libft
 cd ../..
 
 echo "Cleaning up"
