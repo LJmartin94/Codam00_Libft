@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: limartin <limartin@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/19 02:36:12 by limartin          #+#    #+#             */
-/*   Updated: 2019/11/27 18:09:07 by limartin         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_lstmap_bonus.c                                  :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: limartin <limartin@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2019/11/19 02:36:12 by limartin      #+#    #+#                 */
+/*   Updated: 2022/06/08 10:31:12 by limartin      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void (*del)(void *))
 	return (0);
 }
 
-t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*head;
 

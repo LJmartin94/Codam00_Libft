@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: limartin <limartin@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/17 15:54:29 by limartin          #+#    #+#             */
-/*   Updated: 2019/11/21 17:47:59 by limartin         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_itoa.c                                          :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: limartin <limartin@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2019/11/17 15:54:29 by limartin      #+#    #+#                 */
+/*   Updated: 2022/06/08 10:30:54 by limartin      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static	size_t	ft_intlen(long int num)
 	return (len);
 }
 
-char			*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	long int	num;
 	size_t		len;

@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: limartin <limartin@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/02 01:18:10 by limartin          #+#    #+#             */
-/*   Updated: 2019/11/21 17:51:07 by limartin         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_toupper.c                                       :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: limartin <limartin@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2019/11/02 01:18:10 by limartin      #+#    #+#                 */
+/*   Updated: 2022/06/08 10:19:34 by limartin      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_toupper(int c)
+int	ft_toupper(int c)
 {
-	int i;
+	int	i;
 
 	i = c;
 	if (c >= 'a' && c <= 'z')
