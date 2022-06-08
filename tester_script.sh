@@ -15,6 +15,13 @@ rm -rf compilation_info
 touch compilation_info
 echo "Compiling"
 cd Libft && make | cat -e >> ../compilation_info && cd ..
+echo "Relinking: " >> output
+cd Libft
+make | cat -e >> ../output
+echo "Bonus Relinking: " >> ../output
+make bonus | cat -e >> ../compilation_info
+make bonus | cat -e >> ../output
+cd ..
 echo "Cleaning up"
 cd Libft && make fclean | cat -e >> ../compilation_info && cd ..
 open output
