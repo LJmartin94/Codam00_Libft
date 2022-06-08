@@ -54,6 +54,31 @@ gcc -w -o ugly libft.a uglyLibftTester.c
 rm ugly
 cd ..
 
+echo "Running Boris' tests"
+cd Tests
+cp libft.a Boris\ Libft\ Test/
+cp libft.h Boris\ Libft\ Test/
+cd Boris\ Libft\ Test/
+echo "\nBoris -  " >> ../../output
+gcc -o Boris libft.a libtest.c
+./Boris
+gcc -o Boris libft.a lib_bonustest.c
+./Boris
+# gcc -o Boris libft.a lib_cleartest.c
+# ./Boris
+# gcc -o Boris libft.a lib_deltest.c
+# ./Boris
+rm -rf libft.a libft.h Boris
+cd ../..
+
+echo "Running Warmachine"
+echo "\nWarmachine: " >> output
+cd Tests
+cd Warmachine
+./grademe.sh
+cat -e deepthought >> ../../output
+cd ../..
+
 echo "Cleaning up"
 cd Libft 
 make fclean | cat -e >> ../compilation_info 
