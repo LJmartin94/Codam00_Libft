@@ -46,6 +46,14 @@ else
 fi
 cd ..
 
+echo "Running my Ugly Tester"
+echo "\nUgly Tester: " >> output
+cd Tests
+gcc -w -o ugly libft.a uglyLibftTester.c
+./ugly | cat -e >> ../output
+rm ugly
+cd ..
+
 echo "Cleaning up"
 cd Libft 
 make fclean | cat -e >> ../compilation_info 

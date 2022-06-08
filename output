@@ -9,3 +9,371 @@ make: Nothing to be done for `all'.$
 Bonus Relinking: 
 make: Nothing to be done for `all'.$
 make[1]: Nothing to be done for `all'.$
+
+Ugly Tester: 
+Your split: String 0: ^@$
+Expected:   String 0: ^@$
+$
+Your split: String 0: ^@$
+Expected:   String 0: ^@$
+$
+Your split: String 0: ^@$
+Expected:   String 0: ^@$
+$
+Your split: String 0: This$
+^@String 1: is$
+^@String 2: a$
+^@String 3: string$
+^@String 4: of$
+^@String 5: words$
+^@String 6: ^@$
+$
+$
+Your split: String 0: This$
+^@String 1: is$
+^@String 2: a$
+^@String 3: string$
+^@String 4: of$
+^@String 5: words$
+^@String 6: ^@$
+$
+$
+Your split: String 0: This$
+^@String 1: is$
+^@String 2: a$
+^@String 3: string$
+^@String 4: of$
+^@String 5: words$
+^@String 6: ^@$
+$
+$
+Your split: String 0: This$
+^@String 1: is$
+^@String 2: a$
+^@String 3: string$
+^@String 4: of$
+^@String 5: words$
+^@String 6: ^@$
+$
+$
+Your split: String 0: This$
+^@String 1: is$
+^@String 2: a$
+^@String 3: string$
+^@String 4: of$
+^@String 5: words$
+^@String 6: ^@$
+$
+$
+Your split: String 0: This$
+^@String 1: is$
+^@String 2: a$
+^@String 3: string$
+^@String 4: of$
+^@String 5: words$
+^@String 6: ^@$
+$
+$
+Your split: String 0: This$
+^@String 1: is$
+^@String 2: a$
+^@String 3: string$
+^@String 4: of$
+^@String 5: words$
+^@String 6: ^@$
+$
+$
+(test 1) memset:    aaaa$
+(test 1) ft_memset: aaaa$
+$
+(test 2) memset:    ccca$
+(test 2) ft_memset: ccca$
+$
+(test 3) memset:    $
+(test 3) ft_memset: $
+$
+(test 4) memset:    ABORTS$
+(test 4) ft_memset: ccc$
+$
+(test 1) strnstr:    abc$
+(test 1) ft_strnstr: abc$
+$
+(test 1) strnstr:    DDDDank!$
+(test 1) ft_strnstr: DDDDank!$
+$
+(test 1) atoi:    0$
+(test 1) ft_atoi: 0$
+$
+(test 2) atoi:    0$
+(test 2) ft_atoi: 0$
+$
+(test 3) atoi:    5$
+(test 3) ft_atoi: 5$
+$
+(test 4) atoi:    0$
+(test 4) ft_atoi: 0$
+$
+(test 5) atoi:    0$
+(test 5) ft_atoi: 0$
+$
+(test 6) atoi:    -8$
+(test 6) ft_atoi: -8$
+$
+(test 7) atoi:    -7$
+(test 7) ft_atoi: -7$
+$
+(test 8) atoi:    -858993460$
+(test 8) ft_atoi: -858993460$
+$
+(test 9) atoi:    -1$
+(test 9) ft_atoi: -1$
+$
+(test 10) atoi:    -1$
+(test 10) ft_atoi: -1$
+$
+(test 11) atoi:    8$
+(test 11) ft_atoi: 8$
+$
+(test 12) atoi:    7$
+(test 12) ft_atoi: 7$
+$
+(test 13) atoi:    858993460$
+(test 13) ft_atoi: 858993460$
+$
+(test 14) atoi:    1$
+(test 14) ft_atoi: 1$
+$
+(test 15) atoi:    0$
+(test 15) ft_atoi: 0$
+$
+(test 16) atoi:    0$
+(test 16) ft_atoi: 0$
+$
+(test 17) atoi:    -858993460$
+(test 17) ft_atoi: -858993460$
+$
+(test 18) atoi:    2147483647$
+(test 18) ft_atoi: 2147483647$
+$
+(test 19) atoi:    214748364$
+(test 19) ft_atoi: 214748364$
+$
+(test 20) atoi:    2147483640$
+(test 20) ft_atoi: 2147483640$
+$
+(test 21) atoi:    2147483641$
+(test 21) ft_atoi: 2147483641$
+$
+(test 22) atoi:    0$
+(test 22) ft_atoi: 0$
+$
+(test 23) atoi:    -2147483648$
+(test 23) ft_atoi: -2147483648$
+$
+(test 24) atoi:    -214748364$
+(test 24) ft_atoi: -214748364$
+$
+(test 25) atoi:    42$
+(test 25) ft_atoi: 42$
+$
+(test 26) atoi:    -42$
+(test 26) ft_atoi: -42$
+$
+(test 27) atoi:    0$
+(test 27) ft_atoi: 0$
+$
+(test 28) atoi:    0$
+(test 28) ft_atoi: 0$
+$
+(test 1) strncmp:    -1$
+(test 1) ft_strncmp: -65$
+$
+(test 1) memcmp:    -1$
+(test 1) ft_memcmp: -65$
+$
+(test 2) strncmp:    1$
+(test 2) ft_strncmp: 65$
+$
+(test 2) memcmp:     1$
+(test 2) ft_memcmp:  65$
+$
+(test 3) memcmp:     0$
+(test 3) ft_memcmp:  77$
+(test 3) moulinette: 77$
+$
+(test 4) memcmp:     0$
+(test 4) ft_memcmp:  -77$
+(test 4) moulinette: -77$
+$
+(test 5) memcmp:    1$
+(test 5) ft_memcmp: 25$
+$
+(test 6) strncmp:    -1$
+(test 6) ft_strncmp: -25$
+$
+(test 7) memcmp:     -1$
+(test 7) ft_memcmp:  -25$
+$
+(test 8) memcmp:     SEGFAULT$
+(test 8) ft_memcmp:  $
+$
+(test 9) memcmp:     0$
+(test 9) ft_memcmp:  0$
+$
+(test 10) memcmp:     0$
+(test 10) ft_memcmp:  0$
+$
+(test 1) bzero:    ccccc^@^@^@^@^@^@^@^@^@^@cccccccccc$
+(test 1) ft_bzero: ccccc^@^@^@^@^@^@^@^@^@^@cccccccccc$
+$
+(test 1) calloc:    c^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@c$
+(test 1) ft_calloc: c^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@c$
+$
+(test 1) ft_isalnum:    Success$
+$
+(test 1) ft_isalpha:    Success$
+$
+(test 1) ft_isascii:    Success$
+$
+(test 1) ft_isdigit:    Success$
+$
+(test 1) ft_isprint:    Success$
+$
+(test 1) itoa:    0$
+(test 1) ft_itoa: 0$
+$
+(test 2) itoa:    0$
+(test 2) ft_itoa: 0$
+$
+(test 3) itoa:    555$
+(test 3) ft_itoa: 555$
+$
+(test 4) itoa:    7$
+(test 4) ft_itoa: 7$
+$
+(test 5) itoa:    0$
+(test 5) ft_itoa: 0$
+$
+(test 6) itoa:    -8$
+(test 6) ft_itoa: -8$
+$
+(test 7) itoa:    -7$
+(test 7) ft_itoa: -7$
+$
+(test 8) itoa:    -858993460$
+(test 8) ft_itoa: -858993460$
+$
+(test 9) itoa:    -1$
+(test 9) ft_itoa: -1$
+$
+(test 10) itoa:    0$
+(test 10) ft_itoa: 0$
+$
+(test 11) itoa:    8$
+(test 11) ft_itoa: 8$
+$
+(test 12) itoa:    7$
+(test 12) ft_itoa: 7$
+$
+(test 13) itoa:    858993460$
+(test 13) ft_itoa: 858993460$
+$
+(test 14) itoa:    1$
+(test 14) ft_itoa: 1$
+$
+(test 15) itoa:    0$
+(test 15) ft_itoa: 0$
+$
+(test 16) itoa:    -1$
+(test 16) ft_itoa: -1$
+$
+(test 17) itoa:    -858993460$
+(test 17) ft_itoa: -858993460$
+$
+(test 18) itoa:    2147483647$
+(test 18) ft_itoa: 2147483647$
+$
+(test 19) itoa:    214748364$
+(test 19) ft_itoa: 214748364$
+$
+(test 20) itoa:    2147483640$
+(test 20) ft_itoa: 2147483640$
+$
+(test 21) itoa:    2147483641$
+(test 21) ft_itoa: 2147483641$
+$
+(test 22) itoa:    -2147483648$
+(test 22) ft_itoa: -2147483648$
+$
+(test 23) itoa:    -2147483648$
+(test 23) ft_itoa: -2147483648$
+$
+(test 24) itoa:    -214748372$
+(test 24) ft_itoa: -214748372$
+$
+(test 25) itoa:    42$
+(test 25) ft_itoa: 42$
+$
+(test 26) itoa:    -42$
+(test 26) ft_itoa: -42$
+$
+(test 27) itoa:    -42$
+(test 27) ft_itoa: -42$
+$
+(test 28) itoa:    -42$
+(test 28) ft_itoa: -42$
+$
+(test 1) memchr:    c <- This is the first c, ccccccc, c <- This is the last one.$
+(test 1) ft_memchr: c <- This is the first c, ccccccc, c <- This is the last one.$
+$
+(test 2) memchr:    $
+(test 2) ft_memchr: $
+$
+(test 3) memchr:    $
+(test 3) ft_memchr: $
+$
+(test 1) strchr:    c <- This is the first c, ccccccc, c <- This is the last one.$
+(test 1) ft_strchr: c <- This is the first c, ccccccc, c <- This is the last one.$
+$
+(test 1) strrchr:    c <- This is the last one.$
+(test 1) ft_strrchr: c <- This is the last one.$
+$
+(test 1) strrchr:    c <- This is the last one.$
+(test 1) ft_strrchr: c <- This is the last one.$
+$
+memmove:    0123401234567def^@^@^@^@$
+ft_memmove: 0123401234567def^@^@^@^@$
+$
+memmove:    56789abc89abcdef^@^@^@^@$
+ft_memmove: 56789abc89abcdef^@^@^@^@$
+$
+memcpy:    xhelloia^@x^@^@^@^@^@$
+ft_memcpy: xhelloia^@x^@^@^@^@^@$
+$
+strdup test: $
+Get dup'd$
+Get dup'd$
+$
+strjoin test: $
+Get dup'dGet dup'd$
+Get dup'dGet dup'd$
+$
+(test 1) ft_putchar:    ^@^A^B^C^D^E^F^G^H	^K^L^M^N^O^P^Q^R^S^T^U^V^W^X^Y^Z^[^\^]^^^_ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~^?$
+(test 1) ft_putchar:    ^@^A^B^C^D^E^F^G^H	^K^L^M^N^O^P^Q^R^S^T^U^V^W^X^Y^Z^[^\^]^^^_ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~^?$
+$
+Do the following check using the "-fsanitize=address" flag$
+$
+ft_strlcat: 31$
+strlcat:    31$
+ft_strlcat: rrrrrrrrrrrrrrr$
+strlcat:    rrrrrrrrrrrrrrr$
+$
+Also check ft_putstr and ft_putnbr lol coz the tester requires those to work properly$
+$
+And everything alphabetically beyond strjoin$
+$
+Also check the bonus manually$
+$
+memccpy gives   : |xhelloxxxx| with address: 0x7ffeeedb6fd0$
+ft_memccpy gives: |xhelloxxxx| with address: 0x7ffeeedb7040$
+$
