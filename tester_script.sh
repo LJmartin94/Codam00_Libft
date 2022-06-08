@@ -34,6 +34,16 @@ make >> ../compilation_info
 make bonus >> ../compilation_info
 cp libft.a ../Tests >> ../compilation_info
 cp libft.h ../Tests >> ../compilation_info
+if test -f "../Tests/libft.a"; then
+    echo "\033[0;32mlibft.a exists.\033[0m"
+else
+    echo "\033[0;31mlibft.a FAILED! \033[0m"
+fi
+if test -f "../Tests/libft.h"; then
+    echo "\033[0;32mlibft.h exists.\033[0m"
+else
+    echo "\033[0;31mlibft.h FAILED! \033[0m"
+fi
 cd ..
 
 echo "Cleaning up"
