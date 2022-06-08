@@ -1,1 +1,18 @@
-
+377,378c377,378
+< memccpy gives   : |xhelloxxxx| with address: 0x7ffee3160fd0$
+< ft_memccpy gives: |xhelloxxxx| with address: 0x7ffee3161040$
+---
+> memccpy gives   : |xhelloxxxx| with address: 0x7ffee8efafd0$
+> ft_memccpy gives: |xhelloxxxx| with address: 0x7ffee8efb040$
+710c710
+< Wed Jun  8 15:02:29 CEST 2022$
+---
+> Wed Jun  8 16:59:51 CEST 2022$
+768c768
+< -rw-r--r--  1 limartin  piscine  33296 Jun  8 15:02 /Users/limartin/Desktop/ghLibft/Tests/Warmachine/dirlibft/libft.a$
+---
+> -rw-r--r--  1 limartin  piscine  33296 Jun  8 16:59 /Users/limartin/Desktop/ghLibft/Tests/Warmachine/dirlibft/libft.a$
+979c979
+< --- /Users/limartin/Desktop/ghLibft/Tests/Warmachine/tests/Part1_functions/ft_memcmp/user_output_test09	2022-06-08 15:02:40.000000000 +0200$$
+---
+> --- /Users/limartin/Desktop/ghLibft/Tests/Warmachine/tests/Part1_functions/ft_memcmp/user_output_test09	2022-06-08 16:59:59.000000000 +0200$$

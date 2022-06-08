@@ -58,6 +58,10 @@ echo "Running unit tester"
 cd Tests
 cd iKOLEtest
 echo "\nUnit test: " >> ../../output
+make fclean >> ../../compilation_info
+cd ../../Libft
+make bonus >> ../../compilation_info
+cd ../Tests/iKOLEtest
 make >> ../../compilation_info
 ./run_test
 cat -e result.log >> ../../output

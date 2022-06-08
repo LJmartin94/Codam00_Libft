@@ -42,10 +42,78 @@ gcc -Wall -Wextra -Werror -c -o ft_lstdelone_bonus.o ft_lstdelone_bonus.c -I ./$
 gcc -Wall -Wextra -Werror -c -o ft_lstclear_bonus.o ft_lstclear_bonus.c -I ./$
 gcc -Wall -Wextra -Werror -c -o ft_lstiter_bonus.o ft_lstiter_bonus.c -I ./$
 gcc -Wall -Wextra -Werror -c -o ft_lstmap_bonus.o ft_lstmap_bonus.c -I ./$
-ar rc libft.a ./ft_memset.o ./ft_bzero.o ./ft_memcpy.o ./ft_memccpy.o ./ft_memmove.o ./ft_memchr.o ./ft_memcmp.o ./ft_strlen.o ./ft_isalpha.o ./ft_isdigit.o ./ft_isalnum.o ./ft_isascii.o ./ft_isprint.o ./ft_toupper.o ./ft_tolower.o ./ft_strchr.o ./ft_strrchr.o ./ft_strncmp.o ./ft_strlcpy.o ./ft_strlcat.o ./ft_strdup.o ./ft_strnstr.o ./ft_atoi.o ./ft_calloc.o ./ft_substr.o ./ft_strjoin.o ./ft_strtrim.o ./ft_split.o ./ft_itoa.o ./ft_strmapi.o ./ft_putchar_fd.o ./ft_putstr_fd.o ./ft_putendl_fd.o ./ft_putnbr_fd.o ./ft_lstnew_bonus.o ./ft_lstadd_front_bonus.o ./ft_lstsize_bonus.o ./ft_lstlast_bonus.o ./ft_lstadd_back_bonus.o ./ft_lstdelone_bonus.o ./ft_lstclear_bonus.o ./ft_lstiter_bonus.o ./ft_lstmap_bonus.o$
 make: Nothing to be done for `all'.
 make[1]: Nothing to be done for `all'.
-make: Nothing to be done for `all'.
+[38;5;196;m[  Cleaning #0  ][0m
+[38;5;196m➤ [38;5;9m rm -f obj/src/main.o obj/src/test_functions.o obj/src/display_test_result.o obj/src/signal.o obj/src/sandbox.o obj/src/bench_functions.o obj/src/additional_functions.o obj/hardcore-mode/hardcore-main.o obj/hardcore-mode/error.o obj/hardcore-mode/ncurses-display.o obj/hardcore-mode/test-init.o obj/hardcore-mode/test-utils.o obj/hardcore-mode/test-strcpy.o obj/hardcore-mode/test-strcmp.o obj/hardcore-mode/test-strncmp.o obj/hardcore-mode/test-memset.o obj/hardcore-mode/test-memcpy.o obj/hardcore-mode/test-memccpy.o obj/hardcore-mode/test-memmove.o obj/hardcore-mode/test-memchr.o obj/hardcore-mode/test-memcmp.o obj/hardcore-mode/test-strlen.o obj/hardcore-mode/test-strncpy.o obj/hardcore-mode/test-strcat.o obj/hardcore-mode/test-strncat.o obj/hardcore-mode/test-strchr.o obj/hardcore-mode/test-strrchr.o obj/hardcore-mode/test-strstr.o [31m
+[38;5;196m➤ [38;5;9m rm -f libft.so assets/libft.a assetslibtests assets/malloc.dylib [31m
+[38;5;196m➤ [38;5;9m rm -f run_test [31m
+[38;5;46m make -j 3 -C ../../Libft [31m
+make[1]: Nothing to be done for `all'.
+[38;5;46m make bonus -j 3 -C ../../Libft
+make[2]: Nothing to be done for `all'.
+[38;5;46m cp ../../Libft/libft.a assets/ [31m
+[38;5;46m➤ [38;5;47m clang -shared -fPIC assets/tmp/ft_atoi.o assets/tmp/ft_bzero.o assets/tmp/ft_calloc.o assets/tmp/ft_isalnum.o assets/tmp/ft_isalpha.o assets/tmp/ft_isascii.o assets/tmp/ft_isdigit.o assets/tmp/ft_isprint.o assets/tmp/ft_itoa.o assets/tmp/ft_memccpy.o assets/tmp/ft_memchr.o assets/tmp/ft_memcmp.o assets/tmp/ft_memcpy.o assets/tmp/ft_memmove.o assets/tmp/ft_memset.o assets/tmp/ft_putchar_fd.o assets/tmp/ft_putendl_fd.o assets/tmp/ft_putnbr_fd.o assets/tmp/ft_putstr_fd.o assets/tmp/ft_split.o assets/tmp/ft_strchr.o assets/tmp/ft_strdup.o assets/tmp/ft_strjoin.o assets/tmp/ft_strlcat.o assets/tmp/ft_strlcpy.o assets/tmp/ft_strlen.o assets/tmp/ft_strmapi.o assets/tmp/ft_strncmp.o assets/tmp/ft_strnstr.o assets/tmp/ft_strrchr.o assets/tmp/ft_strtrim.o assets/tmp/ft_substr.o assets/tmp/ft_tolower.o assets/tmp/ft_toupper.o -o libft.so [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/main.o -c src/main.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/test_functions.o -c src/test_functions.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/display_test_result.o -c src/display_test_result.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/signal.o -c src/signal.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/sandbox.o -c src/sandbox.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/bench_functions.o -c src/bench_functions.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/src/additional_functions.o -c src/additional_functions.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/hardcore-main.o -c hardcore-mode/hardcore-main.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/error.o -c hardcore-mode/error.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/ncurses-display.o -c hardcore-mode/ncurses-display.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-init.o -c hardcore-mode/test-init.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-utils.o -c hardcore-mode/test-utils.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strcpy.o -c hardcore-mode/test-strcpy.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strcmp.o -c hardcore-mode/test-strcmp.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strncmp.o -c hardcore-mode/test-strncmp.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memset.o -c hardcore-mode/test-memset.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memcpy.o -c hardcore-mode/test-memcpy.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memccpy.o -c hardcore-mode/test-memccpy.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memmove.o -c hardcore-mode/test-memmove.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memchr.o -c hardcore-mode/test-memchr.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-memcmp.o -c hardcore-mode/test-memcmp.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strlen.o -c hardcore-mode/test-strlen.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strncpy.o -c hardcore-mode/test-strncpy.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strcat.o -c hardcore-mode/test-strcat.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strncat.o -c hardcore-mode/test-strncat.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strchr.o -c hardcore-mode/test-strchr.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strrchr.o -c hardcore-mode/test-strrchr.c [31m
+[38;5;123;m[  Building #0  ][0m
+[38;5;123m➤ [0m[38;5;122m clang -O2 -funroll-loops -Werror -Wall -Wextra -I./include -o obj/hardcore-mode/test-strstr.o -c hardcore-mode/test-strstr.c [31m
+[38;5;46;m[  Linking #0  ][0m
+[38;5;46m➤ [38;5;47m clang -Werror -Wall -Wextra -O2 -funroll-loops -lncurses -o assets/libtests obj/src/main.o obj/src/test_functions.o obj/src/display_test_result.o obj/src/signal.o obj/src/sandbox.o obj/src/bench_functions.o obj/src/additional_functions.o obj/hardcore-mode/hardcore-main.o obj/hardcore-mode/error.o obj/hardcore-mode/ncurses-display.o obj/hardcore-mode/test-init.o obj/hardcore-mode/test-utils.o obj/hardcore-mode/test-strcpy.o obj/hardcore-mode/test-strcmp.o obj/hardcore-mode/test-strncmp.o obj/hardcore-mode/test-memset.o obj/hardcore-mode/test-memcpy.o obj/hardcore-mode/test-memccpy.o obj/hardcore-mode/test-memmove.o obj/hardcore-mode/test-memchr.o obj/hardcore-mode/test-memcmp.o obj/hardcore-mode/test-strlen.o obj/hardcore-mode/test-strncpy.o obj/hardcore-mode/test-strcat.o obj/hardcore-mode/test-strncat.o obj/hardcore-mode/test-strchr.o obj/hardcore-mode/test-strrchr.o obj/hardcore-mode/test-strstr.o[31m
+[38;5;46m clang -Werror -Wall -Wextra -dynamiclib assets/malloc.c -I ./include -o assets/malloc.dylib [31m
+[38;5;46m clang -Werror -Wall -Wextra assets/wrapper.c -I ./include -o run_test [31m
 rm -f test.o
 rm -f test
 Compiling your libft

@@ -374,8 +374,8 @@ And everything alphabetically beyond strjoin$
 $
 Also check the bonus manually$
 $
-memccpy gives   : |xhelloxxxx| with address: 0x7ffee4467fd0$
-ft_memccpy gives: |xhelloxxxx| with address: 0x7ffee4468040$
+memccpy gives   : |xhelloxxxx| with address: 0x7ffee8efafd0$
+ft_memccpy gives: |xhelloxxxx| with address: 0x7ffee8efb040$
 $
 
 Unit test: 
@@ -707,7 +707,7 @@ $> hostname; uname -msr$
 f1r4s18.codam.nl$
 Darwin 18.7.0 x86_64$
 $> date$
-Wed Jun  8 15:09:44 CEST 2022$
+Wed Jun  8 16:59:51 CEST 2022$
 $> gcc --version$
 Apple clang version 11.0.0 (clang-1100.0.33.8)$
 Target: x86_64-apple-darwin18.7.0$
@@ -765,7 +765,7 @@ gcc -Wall -Wextra -Werror -c -o ft_putnbr_fd.o ft_putnbr_fd.c -I ./$
 ar rc libft.a ./ft_memset.o ./ft_bzero.o ./ft_memcpy.o ./ft_memccpy.o ./ft_memmove.o ./ft_memchr.o ./ft_memcmp.o ./ft_strlen.o ./ft_isalpha.o ./ft_isdigit.o ./ft_isalnum.o ./ft_isascii.o ./ft_isprint.o ./ft_toupper.o ./ft_tolower.o ./ft_strchr.o ./ft_strrchr.o ./ft_strncmp.o ./ft_strlcpy.o ./ft_strlcat.o ./ft_strdup.o ./ft_strnstr.o ./ft_atoi.o ./ft_calloc.o ./ft_substr.o ./ft_strjoin.o ./ft_strtrim.o ./ft_split.o ./ft_itoa.o ./ft_strmapi.o ./ft_putchar_fd.o ./ft_putstr_fd.o ./ft_putendl_fd.o ./ft_putnbr_fd.o$
 $
 $> ls -la libft.a$
--rw-r--r--  1 limartin  piscine  33296 Jun  8 15:09 /Users/limartin/Desktop/ghLibft/Tests/Warmachine/dirlibft/libft.a$
+-rw-r--r--  1 limartin  piscine  33296 Jun  8 16:59 /Users/limartin/Desktop/ghLibft/Tests/Warmachine/dirlibft/libft.a$
 $
 = Part1_functions ==============================================================$
 $
@@ -976,7 +976,7 @@ Diff OK :D$
 = Test 9 ===================================================$
 $> ./user_exe 09$
 $> diff -U 3 user_output_test09 test09.output$
---- /Users/limartin/Desktop/ghLibft/Tests/Warmachine/tests/Part1_functions/ft_memcmp/user_output_test09	2022-06-08 15:09:52.000000000 +0200$$
+--- /Users/limartin/Desktop/ghLibft/Tests/Warmachine/tests/Part1_functions/ft_memcmp/user_output_test09	2022-06-08 16:59:59.000000000 +0200$$
 +++ /Users/limartin/Desktop/ghLibft/Tests/Warmachine/tests/Part1_functions/ft_memcmp/test09.output	2019-11-11 21:18:42.000000000 +0100$$
 @@ -1 +1 @@$$
 -1$$
