@@ -2,7 +2,8 @@ echo "\033[0;32m Directory structure: This dir should contain the script, a dir 
 rm -rf output
 touch output
 echo "Checking norminette"
-cd Libft && norminette | cat -e >> ../output && cd ..
+cd Libft && norminette | cat -e | grep "Error" >> ../output
+cd ..
 rm -rf compilation_info
 touch compilation_info
 echo "Compiling"
