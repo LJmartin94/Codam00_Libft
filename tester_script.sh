@@ -107,7 +107,10 @@ cd destructor2
 ./run.sh ../../Libft
 cd ../..
 
-echo "Cleaning up"
+echo "\nNote: stan's tests in ./Tests/stan are not used as they require criterion to run. 
+This is too time consuming during a regular eval, but feel free to experiment with them!"
+
+echo "\nCleaning up"
 cd Libft 
 make fclean | cat -e >> ../compilation_info 
 cd ..
